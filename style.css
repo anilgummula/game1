@@ -1,0 +1,40 @@
+#img{
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+    border:2px dotted gray;
+    margin-top: 10px;
+}
+#btn{
+    display:flex;
+    /* justify-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-self: center; */
+    size: 20px;
+    color:blue;
+    border:2px solid blueviolet;
+    margin-top:10vh;
+}
+#header{
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+    border:2px solid gray;
+    margin-top: 10px;
+    padding: 4px;
+}
+#score{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+    border:2px dotted red;
+    padding: 4px;
+}
+        
