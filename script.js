@@ -34,7 +34,7 @@ function startGame() {
         document.getElementById("btn").style.position = "absolute";
         document.getElementById("btn").style.top = `${Math.floor(Math.random() * 60 + 20)}vh`; // vertical within 20-80vh
         document.getElementById("btn").style.left = `${randomLeft}px`;
-    }, 2000);
+    }, 1000);
 }
 
 function clickme(){
