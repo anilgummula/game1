@@ -27,7 +27,13 @@ function startGame() {
     moveInterval = setInterval(() => {
         // drag+=500;
         let num = Math.floor(Math.random() * (1000 - 100) + 100);
-        document.getElementById("btn").style.margin = `200px ${num}px ${num}px ${num}px`;
+        const screenWidth = window.innerWidth;
+        const maxMargin = screenWidth - 100; // leave space for button width
+        const randomLeft = Math.floor(Math.random() * maxMargin);
+            // document.getElementById("btn").style.margin = `200px ${num}px ${num}px ${num}px`;
+        document.getElementById("btn").style.position = "absolute";
+        document.getElementById("btn").style.top = `${Math.floor(Math.random() * 60 + 20)}vh`; // vertical within 20-80vh
+        document.getElementById("btn").style.left = `${randomLeft}px`;
     }, 2000);
 }
 

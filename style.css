@@ -1,61 +1,62 @@
-#img{
-    display:flex;
-    justify-items: center;
-    justify-content: center;
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     text-align: center;
-    justify-self: center;
-    border:2px dotted gray;
-    margin-top: 10px;
+    background-color: #000; /* optional for better contrast on mobile */
+    color: white;
 }
-#btn{
-    display:flex;
-    /* justify-items: center;
-    justify-content: center;
-    text-align: center;
-    justify-self: center; */
-    size: 20px;
-    color:blue;
-    border:2px solid blueviolet;
-    margin-top:10vh;
+
+#img {
+    border: 2px dotted gray;
+    margin: 10px auto;
+    max-width: 90%;
+    height: auto;
+    display: block;
 }
-#startBtn{
-    display:flex;
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
-    justify-self: center;
-    size: 20px;
-    color:blue;
-    border:2px solid blueviolet;
-    margin-top:20px;
+
+#btn,
+#startBtn {
+    color: blue;
+    border: 2px solid blueviolet;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 20px auto;
+    display: block;
+    max-width: 80%;
+    width: fit-content;
 }
-#header{
-    display:flex;
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
-    justify-self: center;
-    border:2px solid gray;
-    margin-top: 10px;
-    padding: 4px;
+
+#header, #timer, #score {
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 90%;
+    font-size: 1.2rem;
+    display: block;
 }
-#timer{
-    display:flex;
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
-    justify-self: center;
-    border:2px solid gray;
-    margin-top: 10px;
-    padding: 4px;
+
+#score {
+    border: 2px dotted red;
 }
-#score{
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
-    justify-self: center;
-    border:2px dotted red;
-    padding: 4px;
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #btn, #startBtn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    #header, #timer, #score {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    #img {
+        max-width: 95%;
+    }
 }
-        
+
+
