@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game1</title>
     <script lang="js" src="./script.js" ></script>
     <link rel="stylesheet" href="./style.css">
     
 </head>
 <body>
-    <h1 id="header" >Click button to change images </h1>
-    <h1 id="header" style="color: aqua;" >highest score : 10 </h1>
-    <h3 id="score">Score : 1</h3>
+    <h1 id="header" >Find & click the button </h1>
+    <h2 id="timer"  style="color: red;">Timer : 20s</h2>
+    <!-- <h1 id="header" style="color: aqua;" >highest score : 10 </h1> -->
+    <h1 id="header" style="color: aqua;">Highest Score : <span id="highscore">0</span></h1>
+    <h3 id="score">Score : 0</h3>
     <img id="img" src="1.jpeg" width="320px" height="200px" alt="">
-    <button id="btn" onclick="clickme()">Click me</button>
+    <button id="startBtn" onclick="startGame()">Start Game</button>
+    <button id="btn" style="display:none;" onclick="clickme()">Click me</button>
+    <!-- <script>
+        let timer=20;
+        setInterval(()=>{
+
+        if (timer > 0) {
+            document.getElementById("timer").innerText = `Timer : ${timer--}s`;
+        } else {
+            endGame();
+        }
+
+        },1000)
+    </script> -->
 </body>
 </html>
