@@ -20,9 +20,11 @@ function startGame() {
         if (timer > 0) {
             document.getElementById("timer").innerText = `Timer : ${timer--}s`;
         } else {
-            end();
+            end(); 
         }
     }, 1000);
+
+    let speed = 1;
 
     moveInterval = setInterval(() => {
         // drag+=500;
@@ -34,7 +36,9 @@ function startGame() {
         document.getElementById("btn").style.position = "absolute";
         document.getElementById("btn").style.top = `${Math.floor(Math.random() * 60 + 20)}vh`; // vertical within 20-80vh
         document.getElementById("btn").style.left = `${randomLeft}px`;
-    }, 1000);
+        // speed+=100;
+
+    }, 1000-(speed+=250));
 }
 
 function clickme(){
